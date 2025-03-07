@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MailSettingsComponent } from './mail-settings.component';
+import { isMatomoEnabled } from '../../shared/config';
 
 describe('MailSettingsComponent', () => {
   let component: MailSettingsComponent;
@@ -21,6 +22,8 @@ describe('MailSettingsComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy(if (screenTop=isMatomoEnabled)  {
+      
+    });
   });
 });
